@@ -1,0 +1,7 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto eol=lf
+*.sh eol=lf
+*.rtf -text
+
+LICENSE.txt eol=crlf
+

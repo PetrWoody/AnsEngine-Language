@@ -1,0 +1,25 @@
+{
+  "name": "ansengine-language-support",
+  "displayName": "AnsEngine language support",
+  "description": "Language support form Ansystems Engine",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ansengine",
+      "aliases": ["ANS Engine", "ansengine"],
+      "extensions": [".code",".dlx",".frm",".sci",".mnu"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ansengine",
+      "scopeName": "ans.engine",
+      "path": "./syntaxes/ansengine.tmLanguage.json"
+    }]
+  }
+}
